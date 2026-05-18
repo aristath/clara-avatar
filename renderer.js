@@ -663,6 +663,13 @@ function normalizeSegmentKind(kind) {
   return ['chat', 'user', 'reasoning', 'task', 'tool', 'status'].includes(kind) ? kind : 'chat';
 }
 
+function scrollTextStreamToEnd() {
+  if (!streamTextEl) return;
+  requestAnimationFrame(() => {
+    streamTextEl.scrollTop = streamTextEl.scrollHeight;
+  });
+}
+
 function renderTextStream(textState = {}) {
   if (!streamTitleEl || !streamTextEl) return;
   streamTitleEl.textContent = textState.title || '';
@@ -678,6 +685,7 @@ function renderTextStream(textState = {}) {
     span.textContent = segment.text;
     streamTextEl.append(span);
   }
+  scrollTextStreamToEnd();
 }
 
 function handleTextState(textState) {
