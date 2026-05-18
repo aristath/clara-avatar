@@ -701,6 +701,38 @@ function normalizeSegmentKind(kind) {
   return ['chat', 'user', 'reasoning', 'task', 'tool', 'status'].includes(kind) ? kind : 'chat';
 }
 
+const MARKDOWN_ALLOWED_TAGS = [
+  'a', 'blockquote', 'br', 'code', 'del', 'em', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6',
+  'hr', 'li', 'ol', 'p', 'pre', 'strong', 'table', 'tbody', 'td', 'th', 'thead', 'tr', 'ul',
+];
+const MARKDOWN_ALLOWED_ATTR = ['href', 'title'];
+
+function renderMarkdown(target, text) {
+  const parser = window.marked;
+  const sanitizer = window.DOMPurify;
+  if (!parser || !sanitizer) {
+    target.textContent = text;
+    return;
+  }
+
+  try {
+    const html = typeof parser.parse === 'function'
+      ? parser.parse(text, { gfm: true, breaks: true, silent: true })
+      : parser(text, { gfm: true, breaks: true, silent: true });
+    target.innerHTML = sanitizer.sanitize(html, {
+      ALLOWED_TAGS: MARKDOWN_ALLOWED_TAGS,
+      ALLOWED_ATTR: MARKDOWN_ALLOWED_ATTR,
+    });
+    for (const link of target.querySelectorAll('a[href]')) {
+      link.rel = 'noreferrer noopener';
+      link.target = '_blank';
+    }
+  } catch (err) {
+    console.warn('Markdown render error:', err.message);
+    target.textContent = text;
+  }
+}
+
 function scrollTextStreamToEnd() {
   if (!streamTextEl) return;
   requestAnimationFrame(() => {
@@ -718,10 +750,10 @@ function renderTextStream(textState = {}) {
 
   for (const segment of segments) {
     if (!segment?.text) continue;
-    const span = document.createElement('span');
-    span.className = `token token-${normalizeSegmentKind(segment.kind)}`;
-    span.textContent = segment.text;
-    streamTextEl.append(span);
+    const block = document.createElement('div');
+    block.className = `token token-${normalizeSegmentKind(segment.kind)}`;
+    renderMarkdown(block, segment.text);
+    streamTextEl.append(block);
   }
   scrollTextStreamToEnd();
 }

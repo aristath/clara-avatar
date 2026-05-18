@@ -134,16 +134,104 @@
       font: 18px/1.38 "Doto", monospace;
       font-weight: 600;
       letter-spacing: 0;
-      white-space: pre-wrap;
       overflow-wrap: anywhere;
+    }
+
+    #stream-text p,
+    #stream-text ul,
+    #stream-text ol,
+    #stream-text blockquote,
+    #stream-text pre,
+    #stream-text table {
+      margin: 0 0 0.72em;
+    }
+
+    #stream-text p:last-child,
+    #stream-text ul:last-child,
+    #stream-text ol:last-child,
+    #stream-text blockquote:last-child,
+    #stream-text pre:last-child,
+    #stream-text table:last-child {
+      margin-bottom: 0;
+    }
+
+    #stream-text ul,
+    #stream-text ol {
+      padding-left: 1.3em;
+    }
+
+    #stream-text li + li {
+      margin-top: 0.16em;
+    }
+
+    #stream-text blockquote {
+      padding-left: 0.8em;
+      border-left: 2px solid currentColor;
+      opacity: 0.76;
+    }
+
+    #stream-text code,
+    #stream-text pre {
+      font-family: "Doto", monospace;
+      font-weight: 700;
+    }
+
+    #stream-text code {
+      color: #ffffff;
+    }
+
+    #stream-text pre {
+      padding: 0.48em 0.62em;
+      overflow: hidden;
+      background: rgba(255, 255, 255, 0.06);
+    }
+
+    #stream-text a {
+      color: inherit;
+      text-decoration: underline;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 0.16em;
+    }
+
+    #stream-text table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.92em;
+    }
+
+    #stream-text th,
+    #stream-text td {
+      padding: 0.16em 0.4em 0.16em 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+      text-align: left;
+      vertical-align: top;
     }
 
     .token-chat {
       color: #f4f4f4;
     }
 
+    .token + .token {
+      margin-top: 0.72em;
+    }
+
     .token-user {
-      color: #70e080;
+      padding: 0.38em 0.54em;
+      background: #ffbf4d;
+      color: #000000;
+    }
+
+    .token-user code {
+      color: #000000;
+    }
+
+    .token-user pre {
+      background: rgba(0, 0, 0, 0.08);
+    }
+
+    .token-user th,
+    .token-user td {
+      border-bottom-color: rgba(0, 0, 0, 0.28);
     }
 
     .token-reasoning {
@@ -187,9 +275,11 @@
     </section>
     <section id="stream-panel" aria-live="polite">
       <div id="stream-title"></div>
-      <pre id="stream-text"></pre>
+      <div id="stream-text"></div>
     </section>
   </main>
+  <script src="/vendor/marked/marked.umd.js"></script>
+  <script src="/vendor/dompurify/purify.min.js"></script>
   <script src="renderer.js"></script>
 </body>
 </html>

@@ -106,6 +106,8 @@ Content-Type: application/json
 - `text`: token or full text content.
 - `title`: optional stream title shown above the text.
 
+Text is parsed as GitHub-flavored Markdown in the browser and sanitized before rendering. Raw Markdown markers are not shown unless they are inside code spans or code blocks.
+
 Append tokens:
 
 ```json
@@ -188,9 +190,10 @@ Numeric timing and intensity values are used directly. Setting a transition dura
 
 ## Runtime
 
-- Server validates config at boot and only serves `index.html`, `renderer.js`, bundled Doto fonts, and current-theme expression PNGs.
+- Server validates config at boot and only serves `index.html`, `renderer.js`, vendored Markdown/sanitizer scripts, bundled Doto fonts, and current-theme expression PNGs.
 - Browser polling uses `/status` revisions so late image loads cannot overwrite newer states.
 - The page uses the CRT client's two-column display pattern: avatar on the left, token stream on the right.
+- The token stream renders sanitized Markdown using vendored `marked` and `DOMPurify` browser builds.
 - Expression changes snap frame-by-frame, then switch in place with a short film-splice opacity/background-position transition. Range values continue snapping back and forth inside the requested frame band, with the range endpoints held for `10x` to `40x` the normal snap hold time.
 - A third overlay div renders short clipped glitch flashes from cached images.
 - Vertical film drift occasionally offsets the main image divs' `background-position-y`, then returns to center.

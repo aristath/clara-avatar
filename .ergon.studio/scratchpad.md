@@ -24,6 +24,7 @@
 - No canvas and no framework.
 - Two `.frame-div` elements form the expression double buffer.
 - A third `#div-glitch` overlay flashes clipped slices from cached expression images.
+- Token stream content is rendered as sanitized Markdown using vendored `marked` and `DOMPurify` browser builds.
 - Vertical film drift occasionally offsets the two main image divs' `background-position-y`, then returns to center.
 - Horizontal film drift independently and repeatedly offsets the two main image divs' `background-position-x` to random nearby positions.
 - `#div-glitch` keeps its original direct `background-position-y`, `clip-path`, and opacity behavior.

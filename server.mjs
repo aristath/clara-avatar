@@ -417,6 +417,12 @@ function getStaticFilePath(pathname) {
 
   if (decodedPath === '/index.html') return { filePath: join(DIR, 'index.html'), servePath: decodedPath };
   if (decodedPath === '/renderer.js') return { filePath: join(DIR, 'renderer.js'), servePath: decodedPath };
+  if (decodedPath === '/vendor/marked/marked.umd.js') {
+    return { filePath: join(DIR, 'vendor', 'marked', 'marked.umd.js'), servePath: decodedPath };
+  }
+  if (decodedPath === '/vendor/dompurify/purify.min.js') {
+    return { filePath: join(DIR, 'vendor', 'dompurify', 'purify.min.js'), servePath: decodedPath };
+  }
 
   const fontPrefix = '/fonts/doto/';
   if (decodedPath.startsWith(fontPrefix)) {
