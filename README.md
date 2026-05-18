@@ -1,0 +1,144 @@
+# Clara Avatar Kiosk
+
+Node.js HTTP server plus browser renderer for displaying Clara's avatar expressions on a kiosk display.
+
+## Run
+
+```bash
+node server.mjs
+```
+
+By default the server listens on `127.0.0.1:2747`. Open `http://127.0.0.1:2747` in the kiosk browser.
+
+## API
+
+### Set Expression
+
+```http
+POST /expression
+Content-Type: application/json
+
+{ "expression": "happy", "value": 0.7 }
+```
+
+- `expression`: name of a `.png` file in `images/expressions/{theme}/`
+- `value`: either a scalar number from `0` to `1`, or a two-number range `[min,max]`
+
+Scalar values map to a single frame:
+
+| Value | Meaning |
+|-------|---------|
+| `0` | first / lowest-intensity frame |
+| `0.5` | middle frame |
+| `1` | final / highest-intensity frame |
+
+Range values let Clara describe uncertainty or a changing state. The renderer maps both ends to frames, then animates back and forth inside that frame band.
+
+Range example:
+
+```json
+{ "expression": "tired", "value": [0.3, 0.7] }
+```
+
+This means roughly “between 30% and 70% tired”. Reversed ranges are accepted and normalized by the server.
+
+Response:
+
+```json
+{
+  "ok": true,
+  "expression": "tired",
+  "value": [0.3, 0.7],
+  "revision": 12
+}
+```
+
+`revision` is monotonically increased for each accepted expression update.
+
+### Current Status
+
+```http
+GET /status
+```
+
+Returns the current state. `value` may be either a scalar or a range.
+
+```json
+{
+  "expression": "tired",
+  "value": [0.3, 0.7],
+  "revision": 12
+}
+```
+
+The browser polls this endpoint and ignores stale revisions.
+
+### Available Expressions
+
+```http
+GET /expressions
+```
+
+Returns a JSON object keyed by expression name. Each value is a direct usage note for Clara from the matching `.txt` file in the current theme's expression directory.
+
+Example shape:
+
+```json
+{
+  "angry": "Starts as a controlled scowl, builds through tighter brows and clenched anger, and only the highest values become open yelling. Use it for anger at any intensity; reserve high values for shouting-level fury.",
+  "tired": "Heavy eyelids and low energy build into fully worn-out exhaustion. Use it for fatigue, depleted attention, late-night softness, or needing rest."
+}
+```
+
+Clara can use this endpoint to discover the available expression names and decide which expression fits a message before calling `POST /expression`.
+
+## Config
+
+`config.json`:
+
+| Key | Type | Default | Description |
+|-----|------|---------|-------------|
+| `port` | number | `2747` | HTTP server port |
+| `host` | string | `"127.0.0.1"` | Bind host |
+| `theme` | string | `"dark"` | Expression image directory |
+| `maskColor` | string | `"#000000"` | Page and avatar background color |
+| `maxBodyBytes` | number | `65536` | Maximum JSON POST size |
+| `controlToken` | string | `""` | Optional bearer or `X-Clara-Avatar-Token` token for `POST /expression` |
+| `switchMs` | number | `400` | Horizontal expression switch duration |
+| `switchTimingFunction` | string | `"ease-in-out"` | CSS timing function for expression switches |
+| `snapScrollMs` | number | `50` | Per-frame vertical snap duration |
+| `snapTimingFunction` | string | `"ease-in-out"` | CSS timing function for frame snaps |
+| `snapHoldMs` | number | `120` | Hold between vertical frame snaps |
+| `pollIntervalMs` | number | `500` | Browser polling interval |
+| `glitchIntervalMs` | `[min,max]` | `[20,60]` | Delay between glitch flashes |
+| `glitchDurationMs` | `[min,max]` | `[20,50]` | Glitch flash duration |
+| `glitchForceHorizontal` | boolean | `true` | Use horizontal glitch strips |
+| `glitchForceVertical` | boolean | `false` | Use vertical glitch strips |
+| `glitchDiff` | `[min,max]` | `[20,100]` | Random strip thickness range |
+| `glitchRandomEmotion` | boolean | `false` | Pick glitches from any cached expression |
+| `driftEnabled` | boolean | `true` | Enable occasional vertical film slip |
+| `driftIntervalMs` | `[min,max]` | `[3500,12000]` | Delay between vertical slip events |
+| `driftPixels` | `[min,max]` | `[1,4]` | Vertical slip intensity in pixels |
+| `driftDurationMs` | `[min,max]` | `[80,180]` | Time to slip vertically out of alignment |
+| `driftTimingFunction` | string | `"cubic-bezier(.16, 1, .3, 1)"` | CSS timing function for vertical slip |
+| `driftHoldMs` | `[min,max]` | `[40,160]` | Time to hold the vertical offset before returning |
+| `driftReturnMs` | `[min,max]` | `[120,280]` | Time to settle vertically back into alignment |
+| `driftReturnTimingFunction` | string | `"cubic-bezier(.45, 0, .2, 1)"` | CSS timing function for vertical settling |
+| `horizontalDriftEnabled` | boolean | `true` | Enable constant random horizontal film wander |
+| `horizontalDriftIntervalMs` | `[min,max]` | `[45,220]` | Delay before picking the next horizontal offset |
+| `horizontalDriftPixels` | `[min,max]` | `[1,4]` | Horizontal drift intensity in pixels |
+| `horizontalDriftDurationMs` | `[min,max]` | `[20,70]` | Time to move to the next horizontal offset |
+| `horizontalDriftTimingFunction` | string | `"cubic-bezier(.2, 0, 0, 1)"` | CSS timing function for horizontal drift |
+
+If `host` is not loopback, `controlToken` is required.
+
+Numeric timing and intensity values are used directly. Setting a transition duration to `0` makes that phase immediate. Timing-function strings are passed directly into CSS.
+
+## Runtime
+
+- Server validates config at boot and only serves `index.html`, `renderer.js`, and current-theme expression PNGs.
+- Browser polling uses `/status` revisions so late image loads cannot overwrite newer states.
+- Expression changes snap frame-by-frame, then switch horizontally between two stacked divs. Range values continue snapping back and forth inside the requested frame band, with the range endpoints held for `10x` to `40x` the normal snap hold time.
+- A third overlay div renders short clipped glitch flashes from cached images.
+- Vertical film drift occasionally offsets the main image divs' `background-position-y`, then returns to center.
+- Horizontal film drift independently and repeatedly offsets the main image divs' `background-position-x` to random nearby positions.

@@ -1,0 +1,6665 @@
+{
+  "version": 2,
+  "canvas": {
+    "width": 1254,
+    "height": 1254
+  },
+  "items": [
+    {
+      "file": "idle.png",
+      "values": [
+        {
+          "value": 0,
+          "x1": 8,
+          "y1": 5,
+          "w": 400,
+          "h": 400,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 8,
+          "left_whiteout": 0
+        },
+        {
+          "value": 13,
+          "x1": 417,
+          "y1": 1,
+          "w": 402,
+          "h": 400,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 25,
+          "x1": 836,
+          "y1": 0,
+          "w": 404,
+          "h": 402,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 38,
+          "x1": 3,
+          "y1": 422,
+          "w": 402,
+          "h": 402,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 6,
+          "left_whiteout": 0
+        },
+        {
+          "value": 50,
+          "x1": 418,
+          "y1": 421,
+          "w": 404,
+          "h": 402,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 6,
+          "left_whiteout": 0
+        },
+        {
+          "value": 63,
+          "x1": 836,
+          "y1": 423,
+          "w": 402,
+          "h": 400,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 3,
+          "left_whiteout": 0
+        },
+        {
+          "value": 75,
+          "x1": 2,
+          "y1": 841,
+          "w": 404,
+          "h": 404,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 3,
+          "left_whiteout": 0
+        },
+        {
+          "value": 88,
+          "x1": 420,
+          "y1": 840,
+          "w": 404,
+          "h": 404,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 5,
+          "left_whiteout": 0
+        },
+        {
+          "value": 100,
+          "x1": 837,
+          "y1": 840,
+          "w": 404,
+          "h": 404,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 6,
+          "left_whiteout": 0
+        }
+      ]
+    },
+    {
+      "file": "angry.png",
+      "values": [
+        {
+          "value": 0,
+          "x1": 1,
+          "y1": 0,
+          "w": 383,
+          "h": 383,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 13,
+          "x1": 419,
+          "y1": 0,
+          "w": 383,
+          "h": 383,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 25,
+          "x1": 837,
+          "y1": 0,
+          "w": 383,
+          "h": 383,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 38,
+          "x1": 1,
+          "y1": 418,
+          "w": 383,
+          "h": 383,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 50,
+          "x1": 419,
+          "y1": 418,
+          "w": 383,
+          "h": 383,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 63,
+          "x1": 837,
+          "y1": 418,
+          "w": 383,
+          "h": 383,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 75,
+          "x1": 1,
+          "y1": 836,
+          "w": 383,
+          "h": 383,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 88,
+          "x1": 419,
+          "y1": 836,
+          "w": 383,
+          "h": 383,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 100,
+          "x1": 837,
+          "y1": 836,
+          "w": 383,
+          "h": 383,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        }
+      ]
+    },
+    {
+      "file": "annoyed.png",
+      "values": [
+        {
+          "value": 0,
+          "x1": 26,
+          "y1": 0,
+          "w": 373,
+          "h": 373,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 13,
+          "x1": 430,
+          "y1": 0,
+          "w": 373,
+          "h": 373,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 25,
+          "x1": 828,
+          "y1": 0,
+          "w": 373,
+          "h": 373,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 38,
+          "x1": 28,
+          "y1": 427,
+          "w": 373,
+          "h": 373,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 50,
+          "x1": 430,
+          "y1": 427,
+          "w": 373,
+          "h": 373,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 63,
+          "x1": 829,
+          "y1": 427,
+          "w": 373,
+          "h": 373,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 75,
+          "x1": 28,
+          "y1": 847,
+          "w": 373,
+          "h": 373,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 88,
+          "x1": 433,
+          "y1": 847,
+          "w": 373,
+          "h": 373,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 100,
+          "x1": 829,
+          "y1": 847,
+          "w": 373,
+          "h": 373,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        }
+      ]
+    },
+    {
+      "file": "blinking.png",
+      "values": [
+        {
+          "value": 0,
+          "x1": 5,
+          "y1": 8,
+          "w": 410,
+          "h": 406,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 13,
+          "x1": 417,
+          "y1": 8,
+          "w": 410,
+          "h": 406,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 25,
+          "x1": 830,
+          "y1": 8,
+          "w": 410,
+          "h": 406,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 38,
+          "x1": 3,
+          "y1": 426,
+          "w": 410,
+          "h": 406,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 50,
+          "x1": 418,
+          "y1": 427,
+          "w": 410,
+          "h": 406,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 63,
+          "x1": 830,
+          "y1": 427,
+          "w": 410,
+          "h": 406,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 75,
+          "x1": 4,
+          "y1": 844,
+          "w": 410,
+          "h": 406,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 88,
+          "x1": 418,
+          "y1": 844,
+          "w": 410,
+          "h": 406,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 100,
+          "x1": 832,
+          "y1": 844,
+          "w": 410,
+          "h": 406,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        }
+      ]
+    },
+    {
+      "file": "bored.png",
+      "values": [
+        {
+          "value": 0,
+          "x1": 2,
+          "y1": -2,
+          "w": 406,
+          "h": 415,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 5,
+          "left_whiteout": 0
+        },
+        {
+          "value": 13,
+          "x1": 419,
+          "y1": 1,
+          "w": 406,
+          "h": 415,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 4,
+          "left_whiteout": 8
+        },
+        {
+          "value": 25,
+          "x1": 837,
+          "y1": -1,
+          "w": 406,
+          "h": 415,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 3,
+          "left_whiteout": 11
+        },
+        {
+          "value": 38,
+          "x1": 1,
+          "y1": 417,
+          "w": 406,
+          "h": 415,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 4,
+          "left_whiteout": 8
+        },
+        {
+          "value": 50,
+          "x1": 419,
+          "y1": 417,
+          "w": 406,
+          "h": 415,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 4,
+          "left_whiteout": 8
+        },
+        {
+          "value": 63,
+          "x1": 837,
+          "y1": 416,
+          "w": 406,
+          "h": 415,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 5,
+          "left_whiteout": 10
+        },
+        {
+          "value": 75,
+          "x1": 1,
+          "y1": 834,
+          "w": 406,
+          "h": 415,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 5,
+          "left_whiteout": 8
+        },
+        {
+          "value": 88,
+          "x1": 420,
+          "y1": 834,
+          "w": 406,
+          "h": 415,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 6,
+          "left_whiteout": 5
+        },
+        {
+          "value": 100,
+          "x1": 840,
+          "y1": 831,
+          "w": 406,
+          "h": 415,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 9,
+          "left_whiteout": 4
+        }
+      ]
+    },
+    {
+      "file": "calm.png",
+      "values": [
+        {
+          "value": 0,
+          "x1": 12,
+          "y1": 7,
+          "w": 388,
+          "h": 388,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 13,
+          "x1": 428,
+          "y1": 7,
+          "w": 388,
+          "h": 388,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 25,
+          "x1": 846,
+          "y1": 7,
+          "w": 388,
+          "h": 388,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 38,
+          "x1": 12,
+          "y1": 425,
+          "w": 388,
+          "h": 388,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 50,
+          "x1": 430,
+          "y1": 425,
+          "w": 388,
+          "h": 388,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 63,
+          "x1": 848,
+          "y1": 425,
+          "w": 388,
+          "h": 388,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 75,
+          "x1": 13,
+          "y1": 843,
+          "w": 388,
+          "h": 388,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 88,
+          "x1": 430,
+          "y1": 844,
+          "w": 388,
+          "h": 388,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 100,
+          "x1": 848,
+          "y1": 843,
+          "w": 388,
+          "h": 388,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        }
+      ]
+    },
+    {
+      "file": "pouting.png",
+      "values": [
+        {
+          "value": 0,
+          "x1": 7,
+          "y1": 7,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 13,
+          "x1": 425,
+          "y1": 7,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 25,
+          "x1": 843,
+          "y1": 7,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 38,
+          "x1": 7,
+          "y1": 427,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 50,
+          "x1": 425,
+          "y1": 425,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 63,
+          "x1": 843,
+          "y1": 425,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 75,
+          "x1": 7,
+          "y1": 843,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 88,
+          "x1": 425,
+          "y1": 843,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 100,
+          "x1": 843,
+          "y1": 843,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        }
+      ]
+    },
+    {
+      "file": "concerned.png",
+      "values": [
+        {
+          "value": 0,
+          "x1": 23,
+          "y1": 9,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 13,
+          "x1": 432,
+          "y1": 10,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 25,
+          "x1": 848,
+          "y1": 13,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 38,
+          "x1": 23,
+          "y1": 427,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 50,
+          "x1": 432,
+          "y1": 427,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 63,
+          "x1": 847,
+          "y1": 427,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 75,
+          "x1": 23,
+          "y1": 847,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 88,
+          "x1": 431,
+          "y1": 845,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 100,
+          "x1": 846,
+          "y1": 848,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        }
+      ]
+    },
+    {
+      "file": "conflicted.png",
+      "values": [
+        {
+          "value": 0,
+          "x1": 1,
+          "y1": 6,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 3
+        },
+        {
+          "value": 13,
+          "x1": 419,
+          "y1": 8,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 3
+        },
+        {
+          "value": 25,
+          "x1": 834,
+          "y1": 8,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 6
+        },
+        {
+          "value": 38,
+          "x1": 2,
+          "y1": 423,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 10
+        },
+        {
+          "value": 50,
+          "x1": 422,
+          "y1": 425,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 7
+        },
+        {
+          "value": 63,
+          "x1": 839,
+          "y1": 424,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 75,
+          "x1": 3,
+          "y1": 844,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 88,
+          "x1": 423,
+          "y1": 845,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 100,
+          "x1": 840,
+          "y1": 850,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        }
+      ]
+    },
+    {
+      "file": "contemplating.png",
+      "values": [
+        {
+          "value": 0,
+          "x1": 10,
+          "y1": -2,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 9,
+          "left_whiteout": 0
+        },
+        {
+          "value": 13,
+          "x1": 421,
+          "y1": 2,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 25,
+          "x1": 825,
+          "y1": 3,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 38,
+          "x1": 18,
+          "y1": 411,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 50,
+          "x1": 423,
+          "y1": 414,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 63,
+          "x1": 828,
+          "y1": 404,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 4,
+          "left_whiteout": 0
+        },
+        {
+          "value": 75,
+          "x1": 15,
+          "y1": 807,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 13,
+          "left_whiteout": 0
+        },
+        {
+          "value": 88,
+          "x1": 425,
+          "y1": 808,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 11,
+          "left_whiteout": 0
+        },
+        {
+          "value": 100,
+          "x1": 834,
+          "y1": 807,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 14,
+          "left_whiteout": 0
+        }
+      ]
+    },
+    {
+      "file": "crazy.png",
+      "values": [
+        {
+          "value": 0,
+          "x1": 21,
+          "y1": 12,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 13,
+          "x1": 434,
+          "y1": 7,
+          "w": 393,
+          "h": 380,
+          "offset_x": 3,
+          "offset_y": 3,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 25,
+          "x1": 839,
+          "y1": -5,
+          "w": 400,
+          "h": 398,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 38,
+          "x1": -7,
+          "y1": 410,
+          "w": 411,
+          "h": 406,
+          "offset_x": -16,
+          "offset_y": 11,
+          "top_whiteout": 20,
+          "left_whiteout": 0
+        },
+        {
+          "value": 50,
+          "x1": 425,
+          "y1": 418,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 63,
+          "x1": 843,
+          "y1": 418,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 75,
+          "x1": 33,
+          "y1": 832,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 88,
+          "x1": 450,
+          "y1": 836,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 100,
+          "x1": 864,
+          "y1": 836,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        }
+      ]
+    },
+    {
+      "file": "crying.png",
+      "values": [
+        {
+          "value": 0,
+          "x1": -3,
+          "y1": 5,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 13,
+          "x1": 415,
+          "y1": 6,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 25,
+          "x1": 833,
+          "y1": 9,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 38,
+          "x1": -3,
+          "y1": 426,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 50,
+          "x1": 415,
+          "y1": 426,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 63,
+          "x1": 833,
+          "y1": 425,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 75,
+          "x1": -3,
+          "y1": 843,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 88,
+          "x1": 415,
+          "y1": 843,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 100,
+          "x1": 832,
+          "y1": 844,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        }
+      ]
+    },
+    {
+      "file": "curious.png",
+      "values": [
+        {
+          "value": 0,
+          "x1": 7,
+          "y1": 12,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 13,
+          "x1": 424,
+          "y1": 6,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 25,
+          "x1": 845,
+          "y1": 5,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 38,
+          "x1": 19,
+          "y1": 423,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 50,
+          "x1": 429,
+          "y1": 423,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 63,
+          "x1": 848,
+          "y1": 423,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 75,
+          "x1": 27,
+          "y1": 836,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 88,
+          "x1": 436,
+          "y1": 837,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 100,
+          "x1": 849,
+          "y1": 838,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        }
+      ]
+    },
+    {
+      "file": "daydreaming.png",
+      "values": [
+        {
+          "value": 0,
+          "x1": 20,
+          "y1": 7,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 13,
+          "x1": 437,
+          "y1": 11,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 25,
+          "x1": 842,
+          "y1": 7,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 38,
+          "x1": 47,
+          "y1": 417,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 50,
+          "x1": 449,
+          "y1": 418,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 63,
+          "x1": 850,
+          "y1": 418,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 75,
+          "x1": 50,
+          "y1": 831,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 88,
+          "x1": 453,
+          "y1": 829,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 100,
+          "x1": 842,
+          "y1": 828,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        }
+      ]
+    },
+    {
+      "file": "desperate.png",
+      "values": [
+        {
+          "value": 0,
+          "x1": 8,
+          "y1": 12,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 13,
+          "x1": 421,
+          "y1": 16,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 25,
+          "x1": 831,
+          "y1": 15,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 38,
+          "x1": 9,
+          "y1": 438,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 50,
+          "x1": 421,
+          "y1": 439,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 63,
+          "x1": 834,
+          "y1": 440,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 75,
+          "x1": 10,
+          "y1": 861,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 88,
+          "x1": 421,
+          "y1": 861,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 100,
+          "x1": 831,
+          "y1": 860,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        }
+      ]
+    },
+    {
+      "file": "disgust.png",
+      "values": [
+        {
+          "value": 0,
+          "x1": 0,
+          "y1": 3,
+          "w": 391,
+          "h": 401,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 13,
+          "x1": 419,
+          "y1": 3,
+          "w": 391,
+          "h": 397,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 25,
+          "x1": 837,
+          "y1": 1,
+          "w": 391,
+          "h": 406,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 38,
+          "x1": -1,
+          "y1": 419,
+          "w": 391,
+          "h": 411,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 12,
+          "left_whiteout": 0
+        },
+        {
+          "value": 50,
+          "x1": 418,
+          "y1": 417,
+          "w": 391,
+          "h": 413,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 14,
+          "left_whiteout": 0
+        },
+        {
+          "value": 63,
+          "x1": 837,
+          "y1": 418,
+          "w": 391,
+          "h": 413,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 13,
+          "left_whiteout": 0
+        },
+        {
+          "value": 75,
+          "x1": 2,
+          "y1": 832,
+          "w": 391,
+          "h": 410,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 18,
+          "left_whiteout": 0
+        },
+        {
+          "value": 88,
+          "x1": 423,
+          "y1": 829,
+          "w": 391,
+          "h": 415,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 22,
+          "left_whiteout": 0
+        },
+        {
+          "value": 100,
+          "x1": 843,
+          "y1": 836,
+          "w": 391,
+          "h": 391,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 14,
+          "left_whiteout": 0
+        }
+      ]
+    },
+    {
+      "file": "bashful.png",
+      "values": [
+        {
+          "value": 0,
+          "x1": 13,
+          "y1": 19,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 13,
+          "x1": 435,
+          "y1": 18,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 25,
+          "x1": 851,
+          "y1": 19,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 38,
+          "x1": 14,
+          "y1": 436,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 50,
+          "x1": 431,
+          "y1": 437,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 63,
+          "x1": 851,
+          "y1": 437,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 75,
+          "x1": 15,
+          "y1": 855,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 88,
+          "x1": 432,
+          "y1": 855,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 100,
+          "x1": 849,
+          "y1": 857,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        }
+      ]
+    },
+    {
+      "file": "evil.png",
+      "values": [
+        {
+          "value": 0,
+          "x1": -7,
+          "y1": 14,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 13,
+          "x1": 406,
+          "y1": 15,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 25,
+          "x1": 829,
+          "y1": 11,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 38,
+          "x1": -8,
+          "y1": 430,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 50,
+          "x1": 412,
+          "y1": 430,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 63,
+          "x1": 825,
+          "y1": 431,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 75,
+          "x1": -7,
+          "y1": 848,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 88,
+          "x1": 410,
+          "y1": 852,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 100,
+          "x1": 829,
+          "y1": 853,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        }
+      ]
+    },
+    {
+      "file": "excited.png",
+      "values": [
+        {
+          "value": 0,
+          "x1": 1,
+          "y1": 21,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 13,
+          "x1": 423,
+          "y1": 21,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 25,
+          "x1": 836,
+          "y1": 22,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 38,
+          "x1": 1,
+          "y1": 437,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 6
+        },
+        {
+          "value": 50,
+          "x1": 419,
+          "y1": 437,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 63,
+          "x1": 833,
+          "y1": 435,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 5
+        },
+        {
+          "value": 75,
+          "x1": 3,
+          "y1": 847,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 3
+        },
+        {
+          "value": 88,
+          "x1": 414,
+          "y1": 844,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 8
+        },
+        {
+          "value": 100,
+          "x1": 834,
+          "y1": 852,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 3
+        }
+      ]
+    },
+    {
+      "file": "focusing.png",
+      "values": [
+        {
+          "value": 0,
+          "x1": 12,
+          "y1": 11,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 13,
+          "x1": 432,
+          "y1": 12,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 25,
+          "x1": 850,
+          "y1": 13,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 38,
+          "x1": 15,
+          "y1": 430,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 50,
+          "x1": 435,
+          "y1": 431,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 63,
+          "x1": 851,
+          "y1": 432,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 75,
+          "x1": 16,
+          "y1": 851,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 88,
+          "x1": 435,
+          "y1": 850,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 100,
+          "x1": 854,
+          "y1": 851,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        }
+      ]
+    },
+    {
+      "file": "forbidden.png",
+      "values": [
+        {
+          "value": 0,
+          "x1": 11,
+          "y1": 23,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 13,
+          "x1": 415,
+          "y1": 23,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 25,
+          "x1": 836,
+          "y1": 23,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 38,
+          "x1": 9,
+          "y1": 449,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 50,
+          "x1": 418,
+          "y1": 449,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 63,
+          "x1": 836,
+          "y1": 449,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 75,
+          "x1": 10,
+          "y1": 861,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 88,
+          "x1": 419,
+          "y1": 862,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 100,
+          "x1": 838,
+          "y1": 861,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        }
+      ]
+    },
+    {
+      "file": "amused.png",
+      "values": [
+        {
+          "value": 0,
+          "x1": 10,
+          "y1": 32,
+          "w": 393,
+          "h": 395,
+          "offset_x": 4,
+          "offset_y": 9,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 13,
+          "x1": 433,
+          "y1": 37,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 25,
+          "x1": 852,
+          "y1": 36,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 38,
+          "x1": 18,
+          "y1": 454,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 50,
+          "x1": 437,
+          "y1": 454,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 63,
+          "x1": 855,
+          "y1": 452,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 75,
+          "x1": 20,
+          "y1": 870,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 88,
+          "x1": 437,
+          "y1": 870,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 100,
+          "x1": 857,
+          "y1": 867,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        }
+      ]
+    },
+    {
+      "file": "grateful.png",
+      "values": [
+        {
+          "value": 0,
+          "x1": 2,
+          "y1": 19,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 13,
+          "x1": 421,
+          "y1": 22,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 25,
+          "x1": 838,
+          "y1": 22,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 38,
+          "x1": 6,
+          "y1": 440,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 50,
+          "x1": 425,
+          "y1": 436,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 63,
+          "x1": 845,
+          "y1": 437,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 75,
+          "x1": 14,
+          "y1": 852,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 88,
+          "x1": 431,
+          "y1": 847,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 100,
+          "x1": 843,
+          "y1": 849,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        }
+      ]
+    },
+    {
+      "file": "hallucinating.png",
+      "values": [
+        {
+          "value": 0,
+          "x1": 0,
+          "y1": 11,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 13,
+          "x1": 416,
+          "y1": 14,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 25,
+          "x1": 834,
+          "y1": 13,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 38,
+          "x1": 4,
+          "y1": 430,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 50,
+          "x1": 420,
+          "y1": 431,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 63,
+          "x1": 840,
+          "y1": 430,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 75,
+          "x1": 5,
+          "y1": 846,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 88,
+          "x1": 421,
+          "y1": 847,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 100,
+          "x1": 840,
+          "y1": 844,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        }
+      ]
+    },
+    {
+      "file": "happy.png",
+      "values": [
+        {
+          "value": 0,
+          "x1": 14,
+          "y1": 1,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 13,
+          "x1": 431,
+          "y1": 2,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 25,
+          "x1": 850,
+          "y1": 1,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 38,
+          "x1": 14,
+          "y1": 421,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 50,
+          "x1": 430,
+          "y1": 422,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 63,
+          "x1": 849,
+          "y1": 421,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 75,
+          "x1": 14,
+          "y1": 839,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 88,
+          "x1": 431,
+          "y1": 841,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 100,
+          "x1": 849,
+          "y1": 842,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        }
+      ]
+    },
+    {
+      "file": "loved.png",
+      "values": [
+        {
+          "value": 0,
+          "x1": 19,
+          "y1": 17,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 13,
+          "x1": 434,
+          "y1": 16,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 25,
+          "x1": 845,
+          "y1": 20,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 38,
+          "x1": 15,
+          "y1": 432,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 50,
+          "x1": 432,
+          "y1": 431,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 63,
+          "x1": 847,
+          "y1": 434,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 75,
+          "x1": 14,
+          "y1": 852,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 88,
+          "x1": 434,
+          "y1": 851,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 100,
+          "x1": 848,
+          "y1": 853,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        }
+      ]
+    },
+    {
+      "file": "imagining.png",
+      "values": [
+        {
+          "value": 0,
+          "x1": 19,
+          "y1": 3,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 13,
+          "x1": 436,
+          "y1": 0,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 25,
+          "x1": 845,
+          "y1": 1,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 38,
+          "x1": 36,
+          "y1": 407,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 13,
+          "left_whiteout": 0
+        },
+        {
+          "value": 50,
+          "x1": 433,
+          "y1": 404,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 16,
+          "left_whiteout": 0
+        },
+        {
+          "value": 63,
+          "x1": 836,
+          "y1": 405,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 15,
+          "left_whiteout": 0
+        },
+        {
+          "value": 75,
+          "x1": 31,
+          "y1": 805,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 21,
+          "left_whiteout": 0
+        },
+        {
+          "value": 88,
+          "x1": 431,
+          "y1": 808,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 26,
+          "left_whiteout": 0
+        },
+        {
+          "value": 100,
+          "x1": 845,
+          "y1": 807,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 10,
+          "left_whiteout": 0
+        }
+      ]
+    },
+    {
+      "file": "laughing.png",
+      "values": [
+        {
+          "value": 0,
+          "x1": 16,
+          "y1": 21,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 13,
+          "x1": 428,
+          "y1": 17,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 25,
+          "x1": 828,
+          "y1": 18,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 38,
+          "x1": 20,
+          "y1": 429,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 50,
+          "x1": 429,
+          "y1": 431,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 63,
+          "x1": 827,
+          "y1": 431,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 75,
+          "x1": 20,
+          "y1": 837,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 88,
+          "x1": 428,
+          "y1": 835,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 100,
+          "x1": 828,
+          "y1": 838,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        }
+      ]
+    },
+    {
+      "file": "listening.png",
+      "values": [
+        {
+          "value": 0,
+          "x1": 14,
+          "y1": 15,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 13,
+          "x1": 426,
+          "y1": 15,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 25,
+          "x1": 843,
+          "y1": 16,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 38,
+          "x1": 16,
+          "y1": 430,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 50,
+          "x1": 424,
+          "y1": 430,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 63,
+          "x1": 842,
+          "y1": 432,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 75,
+          "x1": 16,
+          "y1": 847,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 88,
+          "x1": 427,
+          "y1": 849,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 100,
+          "x1": 840,
+          "y1": 850,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        }
+      ]
+    },
+    {
+      "file": "lonely.png",
+      "values": [
+        {
+          "value": 0,
+          "x1": 3,
+          "y1": 8,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 13,
+          "x1": 420,
+          "y1": 9,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 25,
+          "x1": 838,
+          "y1": 9,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 38,
+          "x1": 3,
+          "y1": 431,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 50,
+          "x1": 421,
+          "y1": 431,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 63,
+          "x1": 835,
+          "y1": 431,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 75,
+          "x1": 3,
+          "y1": 849,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 88,
+          "x1": 421,
+          "y1": 852,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 100,
+          "x1": 838,
+          "y1": 850,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        }
+      ]
+    },
+    {
+      "file": "love.png",
+      "values": [
+        {
+          "value": 0,
+          "x1": 10,
+          "y1": 9,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 13,
+          "x1": 437,
+          "y1": 5,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 25,
+          "x1": 838,
+          "y1": 4,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 38,
+          "x1": 19,
+          "y1": 427,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 50,
+          "x1": 435,
+          "y1": 425,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 63,
+          "x1": 829,
+          "y1": 423,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 75,
+          "x1": 11,
+          "y1": 836,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 7,
+          "left_whiteout": 0
+        },
+        {
+          "value": 88,
+          "x1": 439,
+          "y1": 829,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 10,
+          "left_whiteout": 0
+        },
+        {
+          "value": 100,
+          "x1": 832,
+          "y1": 815,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 33,
+          "left_whiteout": 0
+        }
+      ]
+    },
+    {
+      "file": "flirtatious.png",
+      "values": [
+        {
+          "value": 0,
+          "x1": 26,
+          "y1": 11,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 13,
+          "x1": 440,
+          "y1": 14,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 25,
+          "x1": 845,
+          "y1": 14,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 38,
+          "x1": 31,
+          "y1": 421,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 50,
+          "x1": 448,
+          "y1": 429,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 63,
+          "x1": 850,
+          "y1": 434,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 75,
+          "x1": 29,
+          "y1": 831,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 88,
+          "x1": 436,
+          "y1": 835,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 100,
+          "x1": 848,
+          "y1": 840,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        }
+      ]
+    },
+    {
+      "file": "no.png",
+      "values": [
+        {
+          "value": 0,
+          "x1": 5,
+          "y1": 10,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 13,
+          "x1": 428,
+          "y1": 14,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 25,
+          "x1": 845,
+          "y1": 10,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 38,
+          "x1": 8,
+          "y1": 428,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 50,
+          "x1": 428,
+          "y1": 427,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 63,
+          "x1": 842,
+          "y1": 429,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 75,
+          "x1": 5,
+          "y1": 846,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 88,
+          "x1": 426,
+          "y1": 847,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 100,
+          "x1": 841,
+          "y1": 846,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        }
+      ]
+    },
+    {
+      "file": "overloaded.png",
+      "values": [
+        {
+          "value": 0,
+          "x1": 3,
+          "y1": 13,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 13,
+          "x1": 423,
+          "y1": 14,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 25,
+          "x1": 846,
+          "y1": 14,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 38,
+          "x1": 5,
+          "y1": 434,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 50,
+          "x1": 421,
+          "y1": 433,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 63,
+          "x1": 843,
+          "y1": 432,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 75,
+          "x1": 4,
+          "y1": 852,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 88,
+          "x1": 425,
+          "y1": 854,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 100,
+          "x1": 846,
+          "y1": 850,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        }
+      ]
+    },
+    {
+      "file": "paying-attention.png",
+      "values": [
+        {
+          "value": 0,
+          "x1": 14,
+          "y1": 16,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 13,
+          "x1": 430,
+          "y1": 16,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 25,
+          "x1": 848,
+          "y1": 20,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 38,
+          "x1": 14,
+          "y1": 440,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 50,
+          "x1": 429,
+          "y1": 436,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 63,
+          "x1": 849,
+          "y1": 439,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 75,
+          "x1": 14,
+          "y1": 858,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 88,
+          "x1": 435,
+          "y1": 858,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 100,
+          "x1": 856,
+          "y1": 857,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        }
+      ]
+    },
+    {
+      "file": "playful.png",
+      "values": [
+        {
+          "value": 0,
+          "x1": 3,
+          "y1": 13,
+          "w": 392,
+          "h": 388,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 13,
+          "x1": 433,
+          "y1": 6,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 25,
+          "x1": 849,
+          "y1": 4,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 38,
+          "x1": 19,
+          "y1": 421,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 50,
+          "x1": 430,
+          "y1": 421,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 63,
+          "x1": 849,
+          "y1": 420,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 75,
+          "x1": 18,
+          "y1": 838,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 88,
+          "x1": 428,
+          "y1": 837,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 100,
+          "x1": 847,
+          "y1": 839,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        }
+      ]
+    },
+    {
+      "file": "pleading.png",
+      "values": [
+        {
+          "value": 0,
+          "x1": 9,
+          "y1": 14,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 13,
+          "x1": 424,
+          "y1": 16,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 25,
+          "x1": 841,
+          "y1": 18,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 38,
+          "x1": 13,
+          "y1": 439,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 50,
+          "x1": 430,
+          "y1": 438,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 63,
+          "x1": 844,
+          "y1": 440,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 75,
+          "x1": 16,
+          "y1": 860,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 88,
+          "x1": 431,
+          "y1": 863,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 100,
+          "x1": 844,
+          "y1": 870,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        }
+      ]
+    },
+    {
+      "file": "proud.png",
+      "values": [
+        {
+          "value": 0,
+          "x1": 8,
+          "y1": 10,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 13,
+          "x1": 428,
+          "y1": 11,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 25,
+          "x1": 839,
+          "y1": 8,
+          "w": 387,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 38,
+          "x1": 28,
+          "y1": 418,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 50,
+          "x1": 445,
+          "y1": 420,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 63,
+          "x1": 845,
+          "y1": 423,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 75,
+          "x1": 30,
+          "y1": 826,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 88,
+          "x1": 440,
+          "y1": 827,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 5,
+          "left_whiteout": 0
+        },
+        {
+          "value": 100,
+          "x1": 856,
+          "y1": 819,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 12,
+          "left_whiteout": 0
+        }
+      ]
+    },
+    {
+      "file": "remembering.png",
+      "values": [
+        {
+          "value": 0,
+          "x1": 20,
+          "y1": 14,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 13,
+          "x1": 436,
+          "y1": 14,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 25,
+          "x1": 845,
+          "y1": 13,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 38,
+          "x1": 24,
+          "y1": 431,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 50,
+          "x1": 436,
+          "y1": 432,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 63,
+          "x1": 845,
+          "y1": 434,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 75,
+          "x1": 27,
+          "y1": 848,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 88,
+          "x1": 434,
+          "y1": 848,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 100,
+          "x1": 846,
+          "y1": 851,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        }
+      ]
+    },
+    {
+      "file": "deep-focus.png",
+      "values": [
+        {
+          "value": 0,
+          "x1": 13,
+          "y1": 9,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 7,
+          "left_whiteout": 0
+        },
+        {
+          "value": 13,
+          "x1": 422,
+          "y1": 9,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 25,
+          "x1": 832,
+          "y1": 9,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 38,
+          "x1": 19,
+          "y1": 416,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 50,
+          "x1": 430,
+          "y1": 416,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 63,
+          "x1": 838,
+          "y1": 412,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 7,
+          "left_whiteout": 0
+        },
+        {
+          "value": 75,
+          "x1": 25,
+          "y1": 808,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 13,
+          "left_whiteout": 0
+        },
+        {
+          "value": 88,
+          "x1": 436,
+          "y1": 810,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 10,
+          "left_whiteout": 0
+        },
+        {
+          "value": 100,
+          "x1": 839,
+          "y1": 810,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 13,
+          "left_whiteout": 0
+        }
+      ]
+    },
+    {
+      "file": "responding.png",
+      "values": [
+        {
+          "value": 0,
+          "x1": 15,
+          "y1": 11,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 13,
+          "x1": 432,
+          "y1": 12,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 25,
+          "x1": 851,
+          "y1": 12,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 38,
+          "x1": 14,
+          "y1": 428,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 50,
+          "x1": 434,
+          "y1": 428,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 63,
+          "x1": 851,
+          "y1": 430,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 75,
+          "x1": 13,
+          "y1": 850,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 88,
+          "x1": 431,
+          "y1": 847,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 100,
+          "x1": 849,
+          "y1": 848,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        }
+      ]
+    },
+    {
+      "file": "sad.png",
+      "values": [
+        {
+          "value": 0,
+          "x1": -2,
+          "y1": 12,
+          "w": 400,
+          "h": 400,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 13,
+          "x1": 417,
+          "y1": 13,
+          "w": 400,
+          "h": 400,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 25,
+          "x1": 835,
+          "y1": 14,
+          "w": 400,
+          "h": 400,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 38,
+          "x1": -3,
+          "y1": 430,
+          "w": 400,
+          "h": 400,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 50,
+          "x1": 417,
+          "y1": 432,
+          "w": 400,
+          "h": 400,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 63,
+          "x1": 833,
+          "y1": 433,
+          "w": 400,
+          "h": 400,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 75,
+          "x1": -4,
+          "y1": 851,
+          "w": 400,
+          "h": 400,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 88,
+          "x1": 416,
+          "y1": 850,
+          "w": 400,
+          "h": 400,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 100,
+          "x1": 834,
+          "y1": 851,
+          "w": 400,
+          "h": 400,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        }
+      ]
+    },
+    {
+      "file": "satisfied.png",
+      "values": [
+        {
+          "value": 0,
+          "x1": 14,
+          "y1": 12,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 13,
+          "x1": 434,
+          "y1": 14,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 25,
+          "x1": 852,
+          "y1": 14,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 38,
+          "x1": 16,
+          "y1": 432,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 50,
+          "x1": 434,
+          "y1": 430,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 63,
+          "x1": 853,
+          "y1": 429,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 75,
+          "x1": 18,
+          "y1": 848,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 88,
+          "x1": 435,
+          "y1": 848,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 100,
+          "x1": 854,
+          "y1": 847,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        }
+      ]
+    },
+    {
+      "file": "searching.png",
+      "values": [
+        {
+          "value": 0,
+          "x1": 2,
+          "y1": 21,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 13,
+          "x1": 432,
+          "y1": 21,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 25,
+          "x1": 848,
+          "y1": 19,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 38,
+          "x1": 10,
+          "y1": 437,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 50,
+          "x1": 434,
+          "y1": 436,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 63,
+          "x1": 853,
+          "y1": 435,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 75,
+          "x1": 17,
+          "y1": 845,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 88,
+          "x1": 438,
+          "y1": 841,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 5,
+          "left_whiteout": 0
+        },
+        {
+          "value": 100,
+          "x1": 853,
+          "y1": 839,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 7,
+          "left_whiteout": 0
+        }
+      ]
+    },
+    {
+      "file": "sensual.png",
+      "values": [
+        {
+          "value": 0,
+          "x1": -9,
+          "y1": 20,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 13,
+          "x1": 424,
+          "y1": 26,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 25,
+          "x1": 859,
+          "y1": 37,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 38,
+          "x1": 14,
+          "y1": 455,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 50,
+          "x1": 432,
+          "y1": 454,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 63,
+          "x1": 863,
+          "y1": 454,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 75,
+          "x1": 20,
+          "y1": 866,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 88,
+          "x1": 447,
+          "y1": 865,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 100,
+          "x1": 852,
+          "y1": 876,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        }
+      ]
+    },
+    {
+      "file": "helpless.png",
+      "values": [
+        {
+          "value": 0,
+          "x1": 2,
+          "y1": -3,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 13,
+          "x1": 422,
+          "y1": -1,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 25,
+          "x1": 828,
+          "y1": -4,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 38,
+          "x1": 12,
+          "y1": 417,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 50,
+          "x1": 430,
+          "y1": 419,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 63,
+          "x1": 844,
+          "y1": 412,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 75,
+          "x1": 21,
+          "y1": 804,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 18,
+          "left_whiteout": 0
+        },
+        {
+          "value": 88,
+          "x1": 430,
+          "y1": 810,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 12,
+          "left_whiteout": 0
+        },
+        {
+          "value": 100,
+          "x1": 851,
+          "y1": 813,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 11,
+          "left_whiteout": 0
+        }
+      ]
+    },
+    {
+      "file": "shrug.png",
+      "values": [
+        {
+          "value": 0,
+          "x1": 18,
+          "y1": 1,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 13,
+          "x1": 425,
+          "y1": 0,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 25,
+          "x1": 834,
+          "y1": 5,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 38,
+          "x1": 20,
+          "y1": 415,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 50,
+          "x1": 426,
+          "y1": 415,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 63,
+          "x1": 838,
+          "y1": 416,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 75,
+          "x1": 19,
+          "y1": 824,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 88,
+          "x1": 433,
+          "y1": 818,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 100,
+          "x1": 849,
+          "y1": 822,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        }
+      ]
+    },
+    {
+      "file": "silly.png",
+      "values": [
+        {
+          "value": 0,
+          "x1": 19,
+          "y1": 19,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 13,
+          "x1": 433,
+          "y1": 23,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 25,
+          "x1": 842,
+          "y1": 24,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 38,
+          "x1": 18,
+          "y1": 439,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 50,
+          "x1": 430,
+          "y1": 441,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 63,
+          "x1": 839,
+          "y1": 441,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 75,
+          "x1": 17,
+          "y1": 842,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 5,
+          "left_whiteout": 0
+        },
+        {
+          "value": 88,
+          "x1": 424,
+          "y1": 847,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 100,
+          "x1": 837,
+          "y1": 850,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        }
+      ]
+    },
+    {
+      "file": "sleeping.png",
+      "values": [
+        {
+          "value": 0,
+          "x1": 14,
+          "y1": 10,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 13,
+          "x1": 426,
+          "y1": 12,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 25,
+          "x1": 844,
+          "y1": 12,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 38,
+          "x1": 35,
+          "y1": 422,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 50,
+          "x1": 446,
+          "y1": 417,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 63,
+          "x1": 846,
+          "y1": 420,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 3,
+          "left_whiteout": 0
+        },
+        {
+          "value": 75,
+          "x1": 41,
+          "y1": 820,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 9,
+          "left_whiteout": 0
+        },
+        {
+          "value": 88,
+          "x1": 452,
+          "y1": 822,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 7,
+          "left_whiteout": 0
+        },
+        {
+          "value": 100,
+          "x1": 827,
+          "y1": 819,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 9,
+          "left_whiteout": 0
+        }
+      ]
+    },
+    {
+      "file": "sleepy.png",
+      "values": [
+        {
+          "value": 0,
+          "x1": 20,
+          "y1": 7,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 13,
+          "x1": 428,
+          "y1": 7,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 25,
+          "x1": 843,
+          "y1": 4,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 38,
+          "x1": 16,
+          "y1": 429,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 50,
+          "x1": 426,
+          "y1": 427,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 63,
+          "x1": 838,
+          "y1": 427,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 75,
+          "x1": 30,
+          "y1": 848,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 88,
+          "x1": 432,
+          "y1": 848,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 100,
+          "x1": 842,
+          "y1": 845,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        }
+      ]
+    },
+    {
+      "file": "smirking.png",
+      "values": [
+        {
+          "value": 0,
+          "x1": 12,
+          "y1": 15,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 13,
+          "x1": 428,
+          "y1": 15,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 25,
+          "x1": 849,
+          "y1": 16,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 38,
+          "x1": 14,
+          "y1": 432,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 50,
+          "x1": 430,
+          "y1": 432,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 63,
+          "x1": 848,
+          "y1": 433,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 75,
+          "x1": 12,
+          "y1": 850,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 88,
+          "x1": 430,
+          "y1": 850,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 100,
+          "x1": 847,
+          "y1": 850,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        }
+      ]
+    },
+    {
+      "file": "stressed.png",
+      "values": [
+        {
+          "value": 0,
+          "x1": 6,
+          "y1": 18,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 13,
+          "x1": 424,
+          "y1": 20,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 25,
+          "x1": 842,
+          "y1": 18,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 38,
+          "x1": 8,
+          "y1": 440,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 50,
+          "x1": 426,
+          "y1": 441,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 63,
+          "x1": 842,
+          "y1": 438,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 75,
+          "x1": 6,
+          "y1": 860,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 88,
+          "x1": 426,
+          "y1": 857,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 100,
+          "x1": 844,
+          "y1": 858,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        }
+      ]
+    },
+    {
+      "file": "surprised.png",
+      "values": [
+        {
+          "value": 0,
+          "x1": -2,
+          "y1": 9,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 13,
+          "x1": 422,
+          "y1": 14,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 25,
+          "x1": 840,
+          "y1": 13,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 38,
+          "x1": 1,
+          "y1": 432,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 50,
+          "x1": 421,
+          "y1": 430,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 63,
+          "x1": 842,
+          "y1": 433,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 75,
+          "x1": 6,
+          "y1": 850,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 88,
+          "x1": 426,
+          "y1": 847,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 100,
+          "x1": 845,
+          "y1": 853,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        }
+      ]
+    },
+    {
+      "file": "taking-notes.png",
+      "values": [
+        {
+          "value": 0,
+          "x1": 15,
+          "y1": 16,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 13,
+          "x1": 432,
+          "y1": 24,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 25,
+          "x1": 842,
+          "y1": 32,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 38,
+          "x1": 9,
+          "y1": 444,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 50,
+          "x1": 426,
+          "y1": 444,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 63,
+          "x1": 835,
+          "y1": 448,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 4
+        },
+        {
+          "value": 75,
+          "x1": 8,
+          "y1": 864,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 88,
+          "x1": 418,
+          "y1": 865,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 2
+        },
+        {
+          "value": 100,
+          "x1": 833,
+          "y1": 879,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 5
+        }
+      ]
+    },
+    {
+      "file": "teasing.png",
+      "values": [
+        {
+          "value": 0,
+          "x1": 14,
+          "y1": 32,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 13,
+          "x1": 432,
+          "y1": 36,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 25,
+          "x1": 853,
+          "y1": 34,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 38,
+          "x1": 21,
+          "y1": 452,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 50,
+          "x1": 437,
+          "y1": 453,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 63,
+          "x1": 853,
+          "y1": 452,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 75,
+          "x1": 21,
+          "y1": 871,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 88,
+          "x1": 434,
+          "y1": 873,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 100,
+          "x1": 850,
+          "y1": 871,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        }
+      ]
+    },
+    {
+      "file": "thinking.png",
+      "values": [
+        {
+          "value": 0,
+          "x1": 11,
+          "y1": 5,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 13,
+          "x1": 430,
+          "y1": 6,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 25,
+          "x1": 848,
+          "y1": 5,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 38,
+          "x1": 14,
+          "y1": 421,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 50,
+          "x1": 431,
+          "y1": 421,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 63,
+          "x1": 848,
+          "y1": 422,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 75,
+          "x1": 14,
+          "y1": 843,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 88,
+          "x1": 428,
+          "y1": 843,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 100,
+          "x1": 851,
+          "y1": 844,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        }
+      ]
+    },
+    {
+      "file": "tired.png",
+      "values": [
+        {
+          "value": 0,
+          "x1": 16,
+          "y1": 18,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 13,
+          "x1": 431,
+          "y1": 22,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 25,
+          "x1": 843,
+          "y1": 17,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 38,
+          "x1": 12,
+          "y1": 442,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 50,
+          "x1": 430,
+          "y1": 440,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 63,
+          "x1": 844,
+          "y1": 442,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 75,
+          "x1": 16,
+          "y1": 862,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 88,
+          "x1": 431,
+          "y1": 859,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 100,
+          "x1": 844,
+          "y1": 860,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        }
+      ]
+    },
+    {
+      "file": "trying-to-remember.png",
+      "values": [
+        {
+          "value": 0,
+          "x1": 1,
+          "y1": 4,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 13,
+          "x1": 426,
+          "y1": 5,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 25,
+          "x1": 831,
+          "y1": 4,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 38,
+          "x1": 15,
+          "y1": 406,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 50,
+          "x1": 436,
+          "y1": 405,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 6,
+          "left_whiteout": 0
+        },
+        {
+          "value": 63,
+          "x1": 844,
+          "y1": 408,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 5,
+          "left_whiteout": 0
+        },
+        {
+          "value": 75,
+          "x1": 21,
+          "y1": 807,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 13,
+          "left_whiteout": 0
+        },
+        {
+          "value": 88,
+          "x1": 434,
+          "y1": 808,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 9,
+          "left_whiteout": 0
+        },
+        {
+          "value": 100,
+          "x1": 850,
+          "y1": 810,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 9,
+          "left_whiteout": 0
+        }
+      ]
+    },
+    {
+      "file": "trying.png",
+      "values": [
+        {
+          "value": 0,
+          "x1": -7,
+          "y1": -2,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 13,
+          "x1": 415,
+          "y1": 2,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 25,
+          "x1": 828,
+          "y1": -1,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 38,
+          "x1": -1,
+          "y1": 427,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 50,
+          "x1": 416,
+          "y1": 421,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 63,
+          "x1": 829,
+          "y1": 424,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 75,
+          "x1": -3,
+          "y1": 833,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 88,
+          "x1": 429,
+          "y1": 836,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 100,
+          "x1": 840,
+          "y1": 839,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        }
+      ]
+    },
+    {
+      "file": "uncomfortable.png",
+      "values": [
+        {
+          "value": 0,
+          "x1": 9,
+          "y1": 14,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 13,
+          "x1": 424,
+          "y1": 14,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 25,
+          "x1": 836,
+          "y1": 18,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 38,
+          "x1": 14,
+          "y1": 435,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 50,
+          "x1": 428,
+          "y1": 430,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 63,
+          "x1": 835,
+          "y1": 430,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 75,
+          "x1": 16,
+          "y1": 850,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 88,
+          "x1": 430,
+          "y1": 850,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 100,
+          "x1": 842,
+          "y1": 851,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        }
+      ]
+    },
+    {
+      "file": "warm.png",
+      "values": [
+        {
+          "value": 0,
+          "x1": -7,
+          "y1": 5,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 13,
+          "x1": 416,
+          "y1": 5,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 25,
+          "x1": 837,
+          "y1": 7,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 38,
+          "x1": -2,
+          "y1": 428,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 50,
+          "x1": 419,
+          "y1": 427,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 63,
+          "x1": 838,
+          "y1": 427,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 75,
+          "x1": -3,
+          "y1": 847,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 88,
+          "x1": 417,
+          "y1": 847,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 100,
+          "x1": 837,
+          "y1": 846,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        }
+      ]
+    },
+    {
+      "file": "warning.png",
+      "values": [
+        {
+          "value": 0,
+          "x1": 9,
+          "y1": 16,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 13,
+          "x1": 428,
+          "y1": 14,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 25,
+          "x1": 840,
+          "y1": 15,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 38,
+          "x1": 11,
+          "y1": 432,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 50,
+          "x1": 429,
+          "y1": 432,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 63,
+          "x1": 840,
+          "y1": 432,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 75,
+          "x1": 10,
+          "y1": 844,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 88,
+          "x1": 428,
+          "y1": 844,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 100,
+          "x1": 839,
+          "y1": 847,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        }
+      ]
+    },
+    {
+      "file": "working.png",
+      "values": [
+        {
+          "value": 0,
+          "x1": 22,
+          "y1": 16,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 13,
+          "x1": 431,
+          "y1": 15,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 25,
+          "x1": 846,
+          "y1": 13,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 38,
+          "x1": 16,
+          "y1": 429,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 50,
+          "x1": 428,
+          "y1": 431,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 63,
+          "x1": 846,
+          "y1": 432,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 75,
+          "x1": 18,
+          "y1": 831,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 88,
+          "x1": 433,
+          "y1": 828,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 100,
+          "x1": 852,
+          "y1": 828,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        }
+      ]
+    },
+    {
+      "file": "yawning.png",
+      "values": [
+        {
+          "value": 0,
+          "x1": 4,
+          "y1": 15,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 13,
+          "x1": 420,
+          "y1": 17,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 25,
+          "x1": 835,
+          "y1": 14,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 38,
+          "x1": -1,
+          "y1": 438,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 50,
+          "x1": 420,
+          "y1": 437,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 63,
+          "x1": 834,
+          "y1": 436,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 75,
+          "x1": -4,
+          "y1": 853,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 88,
+          "x1": 418,
+          "y1": 860,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        },
+        {
+          "value": 100,
+          "x1": 841,
+          "y1": 864,
+          "w": 380,
+          "h": 380,
+          "offset_x": 0,
+          "offset_y": 0,
+          "top_whiteout": 0,
+          "left_whiteout": 0
+        }
+      ]
+    }
+  ]
+}
