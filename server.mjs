@@ -595,7 +595,16 @@ function textPatchFromActivity(envelope) {
   }
   if (envelope.type === 'tool.call.started') {
     const name = typeof event.name === 'string' ? event.name : 'tool';
-    return { kind: 'tool', text: `\n[tool] ${name}\n` };
+    const args = Object.prototype.hasOwnProperty.call(event, 'arguments') ? event.arguments : {};
+    const payload = event.error
+      ? { arguments: args, rawArguments: event.rawArguments, error: event.error }
+      : args;
+    return { kind: 'tool', text: formatToolTrace('call', name, 'json', stringifyForTrace(payload)) };
+  }
+  if (envelope.type === 'tool.call.finished') {
+    const name = typeof event.name === 'string' ? event.name : 'tool';
+    const result = textFromActivityValue(event.result) || (typeof event.error === 'string' ? `Error: ${event.error}` : '');
+    return { kind: 'tool', text: formatToolTrace('result', name, 'text', result) };
   }
   if (envelope.type === 'task.step.started') {
     const label = typeof event.label === 'string' ? event.label : typeof event.stepId === 'string' ? event.stepId : 'task step';
@@ -608,6 +617,40 @@ function textPatchFromActivity(envelope) {
   if (envelope.type === 'task.finished') return { kind: 'status', text: '\n[task finished]\n' };
   if (envelope.type === 'task.error') return { kind: 'status', text: '\n[task error]\n' };
   return null;
+}
+
+function formatToolTrace(kind, name, language, content) {
+  return `\n<!-- clara-tool-trace:start -->\nTool ${kind}: \`${name}\`\n\n${markdownFence(language, content)}\n<!-- clara-tool-trace:end -->\n`;
+}
+
+function stringifyForTrace(value) {
+  try {
+    const json = JSON.stringify(value, null, 2);
+    return json === undefined ? 'undefined' : json;
+  } catch {
+    return String(value);
+  }
+}
+
+function markdownFence(language, content) {
+  const text = String(content);
+  const fence = '`'.repeat(Math.max(3, longestBacktickRun(text) + 1));
+  const separator = text.endsWith('\n') ? '' : '\n';
+  return `${fence}${language}\n${text}${separator}${fence}`;
+}
+
+function longestBacktickRun(content) {
+  let longest = 0;
+  let current = 0;
+  for (const char of content) {
+    if (char === '`') {
+      current += 1;
+      longest = Math.max(longest, current);
+    } else {
+      current = 0;
+    }
+  }
+  return longest;
 }
 
 function userTextFromActivity(envelope, event) {
