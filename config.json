@@ -28,5 +28,8 @@
   "horizontalDriftIntervalMs": [45, 1000],
   "horizontalDriftPixels": [1, 5],
   "horizontalDriftDurationMs": [20, 70],
-  "horizontalDriftTimingFunction": "cubic-bezier(.2, 0, 0, 1)"
+  "horizontalDriftTimingFunction": "cubic-bezier(.2, 0, 0, 1)",
+  "textPollIntervalMs": 500,
+  "activityBridgeEnabled": true,
+  "assistantActivityUrl": "http://127.0.0.1:3000/api/activity/stream"
 }

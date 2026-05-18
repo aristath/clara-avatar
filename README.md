@@ -92,6 +92,54 @@ Example shape:
 
 Clara can use this endpoint to discover the available expression names and decide which expression fits a message before calling `POST /expression`.
 
+### Token Stream
+
+```http
+POST /text
+Content-Type: application/json
+
+{ "mode": "append", "kind": "chat", "text": "Hello", "title": "ASSISTANT STREAM" }
+```
+
+- `mode`: `"replace"`, `"append"`, or `"clear"`. If omitted, text is replaced.
+- `kind`: `"chat"`, `"user"`, `"reasoning"`, `"task"`, `"tool"`, or `"status"`.
+- `text`: token or full text content.
+- `title`: optional stream title shown above the text.
+
+Append tokens:
+
+```json
+{ "mode": "append", "kind": "chat", "text": " world" }
+```
+
+Replace with structured segments:
+
+```json
+{
+  "title": "ASSISTANT STREAM",
+  "segments": [
+    { "kind": "user", "text": "Question\n" },
+    { "kind": "chat", "text": "Answer" }
+  ]
+}
+```
+
+Clear the stream:
+
+```http
+POST /text/clear
+```
+
+Read current stream state:
+
+```http
+GET /text
+```
+
+The browser receives live token updates from `GET /text/events` and falls back to polling `GET /text` if events disconnect.
+
+When `activityBridgeEnabled` is true, Clara activity events from `assistantActivityUrl` are appended automatically. `chat.user.message` renders as `user`; `llm.token` renders as `chat` or `reasoning` based on its channel; tool and task events render as `tool`, `task`, or `status`.
+
 ## Config
 
 `config.json`:
@@ -129,6 +177,9 @@ Clara can use this endpoint to discover the available expression names and decid
 | `horizontalDriftPixels` | `[min,max]` | `[1,4]` | Horizontal drift intensity in pixels |
 | `horizontalDriftDurationMs` | `[min,max]` | `[20,70]` | Time to move to the next horizontal offset |
 | `horizontalDriftTimingFunction` | string | `"cubic-bezier(.2, 0, 0, 1)"` | CSS timing function for horizontal drift |
+| `textPollIntervalMs` | number | `500` | Browser fallback polling interval for the token stream |
+| `activityBridgeEnabled` | boolean | `true` | Append assistant activity SSE events into the token stream |
+| `assistantActivityUrl` | string | `"http://127.0.0.1:3000/api/activity/stream"` | Assistant activity SSE URL used when the bridge is enabled |
 
 If `host` is not loopback, `controlToken` is required.
 
@@ -136,8 +187,9 @@ Numeric timing and intensity values are used directly. Setting a transition dura
 
 ## Runtime
 
-- Server validates config at boot and only serves `index.html`, `renderer.js`, and current-theme expression PNGs.
+- Server validates config at boot and only serves `index.html`, `renderer.js`, bundled Doto fonts, and current-theme expression PNGs.
 - Browser polling uses `/status` revisions so late image loads cannot overwrite newer states.
+- The page uses the CRT client's two-column display pattern: avatar on the left, token stream on the right.
 - Expression changes snap frame-by-frame, then switch horizontally between two stacked divs. Range values continue snapping back and forth inside the requested frame band, with the range endpoints held for `10x` to `40x` the normal snap hold time.
 - A third overlay div renders short clipped glitch flashes from cached images.
 - Vertical film drift occasionally offsets the main image divs' `background-position-y`, then returns to center.

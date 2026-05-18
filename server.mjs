@@ -44,6 +44,9 @@ const DEFAULT_CONFIG = {
   horizontalDriftPixels: [1, 4],
   horizontalDriftDurationMs: [20, 70],
   horizontalDriftTimingFunction: 'cubic-bezier(.2, 0, 0, 1)',
+  textPollIntervalMs: 500,
+  activityBridgeEnabled: true,
+  assistantActivityUrl: 'http://127.0.0.1:3000/api/activity/stream',
   maxBodyBytes: 65536,
   controlToken: '',
 };
@@ -129,6 +132,9 @@ function validateConfig(rawConfig) {
   config.horizontalDriftPixels = requireNumberRange('horizontalDriftPixels', config.horizontalDriftPixels);
   config.horizontalDriftDurationMs = requireNumberRange('horizontalDriftDurationMs', config.horizontalDriftDurationMs);
   config.horizontalDriftTimingFunction = String(config.horizontalDriftTimingFunction);
+  config.textPollIntervalMs = requireNumber('textPollIntervalMs', config.textPollIntervalMs);
+  config.activityBridgeEnabled = requireBoolean('activityBridgeEnabled', config.activityBridgeEnabled);
+  config.assistantActivityUrl = String(config.assistantActivityUrl);
   config.maxBodyBytes = requireNumber('maxBodyBytes', config.maxBodyBytes);
   if (typeof config.controlToken !== 'string') failConfig('controlToken must be a string');
 
@@ -219,18 +225,30 @@ const injectedConfig = {
   horizontalDriftPixels: bootConfig.horizontalDriftPixels,
   horizontalDriftDurationMs: bootConfig.horizontalDriftDurationMs,
   horizontalDriftTimingFunction: bootConfig.horizontalDriftTimingFunction,
+  textPollIntervalMs: bootConfig.textPollIntervalMs,
 };
 const configScript = `<script>window.__CONFIG__=${JSON.stringify(injectedConfig)}</script>`;
 
 // Current expression state — initialized to idle.
 let currentRevision = 0;
 let currentState = { expression: 'idle', value: 0, revision: currentRevision };
+let textRevision = 0;
+const textClients = new Set();
+const TEXT_STATE_MAX_CHARS = 12000;
+const currentTextState = {
+  title: '',
+  text: '',
+  segments: [],
+  revision: textRevision,
+  updatedAt: new Date().toISOString(),
+};
 
 const MIME = {
   '.html': 'text/html; charset=utf-8',
   '.json': 'application/json; charset=utf-8',
   '.js': 'application/javascript; charset=utf-8',
   '.png': 'image/png',
+  '.ttf': 'font/ttf',
 };
 
 // Cache-Control per extension: HTML/JS no-store, PNGs long-lived.
@@ -239,6 +257,7 @@ const CACHE = {
   '.json': 'no-store, no-cache, must-revalidate',
   '.js': 'no-store, no-cache, must-revalidate',
   '.png': 'public, max-age=31536000, immutable',
+  '.ttf': 'public, max-age=31536000, immutable',
 };
 
 function sendJson(res, status, payload) {
@@ -257,6 +276,92 @@ function isAuthorized(req) {
     req.headers.authorization === `Bearer ${AUTH_TOKEN}` ||
     req.headers['x-clara-avatar-token'] === AUTH_TOKEN
   );
+}
+
+function normalizeSegmentKind(kind) {
+  return ['chat', 'user', 'reasoning', 'task', 'tool', 'status'].includes(kind) ? kind : 'chat';
+}
+
+function touchTextState() {
+  textRevision += 1;
+  currentTextState.revision = textRevision;
+  currentTextState.updatedAt = new Date().toISOString();
+}
+
+function rebuildTextStateText() {
+  let remaining = TEXT_STATE_MAX_CHARS;
+  const kept = [];
+  for (let i = currentTextState.segments.length - 1; i >= 0; i--) {
+    const segment = currentTextState.segments[i];
+    if (!segment?.text) continue;
+    if (segment.text.length <= remaining) {
+      kept.unshift(segment);
+      remaining -= segment.text.length;
+    } else {
+      kept.unshift({ ...segment, text: segment.text.slice(-remaining) });
+      remaining = 0;
+    }
+    if (remaining <= 0) break;
+  }
+  currentTextState.segments = kept;
+  currentTextState.text = currentTextState.segments.map(segment => segment.text).join('');
+}
+
+function appendTextSegment(kind, text) {
+  if (!text) return;
+  const normalizedKind = normalizeSegmentKind(kind);
+  const previous = currentTextState.segments[currentTextState.segments.length - 1];
+  if (previous?.kind === normalizedKind) {
+    previous.text += text;
+  } else {
+    currentTextState.segments.push({ kind: normalizedKind, text });
+  }
+  rebuildTextStateText();
+}
+
+function normalizeTextSegments(segments) {
+  const normalized = [];
+  for (const segment of segments.slice(-120)) {
+    if (!segment || typeof segment !== 'object') continue;
+    const text = typeof segment.text === 'string' ? segment.text : '';
+    if (!text) continue;
+    normalized.push({ kind: normalizeSegmentKind(segment.kind), text });
+  }
+  return normalized;
+}
+
+function patchText(body = {}) {
+  const mode = typeof body.mode === 'string' ? body.mode : body.append ? 'append' : 'replace';
+  const text = typeof body.text === 'string' ? body.text : '';
+  const kind = normalizeSegmentKind(body.kind);
+
+  if (typeof body.title === 'string') currentTextState.title = body.title.slice(0, 160);
+
+  if (mode === 'clear') {
+    currentTextState.text = '';
+    currentTextState.segments = [];
+    if (body.title === undefined) currentTextState.title = '';
+  } else if (mode === 'append') {
+    appendTextSegment(kind, text);
+  } else if (Array.isArray(body.segments)) {
+    currentTextState.segments = normalizeTextSegments(body.segments);
+    rebuildTextStateText();
+  } else {
+    currentTextState.text = text.slice(-TEXT_STATE_MAX_CHARS);
+    currentTextState.segments = currentTextState.text ? [{ kind, text: currentTextState.text }] : [];
+  }
+
+  touchTextState();
+}
+
+function writeTextEvent(res, payload = {}) {
+  res.write(`event: text\ndata: ${JSON.stringify({ type: 'text', payload, text: currentTextState })}\n\n`);
+}
+
+function publishText(payload = {}) {
+  for (const res of textClients) {
+    writeTextEvent(res, payload);
+  }
 }
 
 async function readRequestBody(req) {
@@ -309,6 +414,13 @@ function getStaticFilePath(pathname) {
 
   if (decodedPath === '/index.html') return { filePath: join(DIR, 'index.html'), servePath: decodedPath };
   if (decodedPath === '/renderer.js') return { filePath: join(DIR, 'renderer.js'), servePath: decodedPath };
+
+  const fontPrefix = '/fonts/doto/';
+  if (decodedPath.startsWith(fontPrefix)) {
+    const fontName = decodedPath.slice(fontPrefix.length);
+    if (!/^Doto-(Regular|SemiBold|Bold)\.ttf$/.test(fontName)) return { status: 404, message: 'Not found' };
+    return { filePath: join(DIR, 'fonts', 'doto', fontName), servePath: decodedPath };
+  }
 
   const imagePrefix = `/images/expressions/${THEME}/`;
   if (decodedPath.startsWith(imagePrefix)) {
@@ -374,6 +486,58 @@ const server = createServer(async (req, res) => {
       return sendJson(res, 200, expressionDescriptions);
     }
 
+    // GET /text — return current token stream state
+    if (req.method === 'GET' && pathname === '/text') {
+      return sendJson(res, 200, currentTextState);
+    }
+
+    // GET /text/events — push token stream state updates to the browser
+    if (req.method === 'GET' && pathname === '/text/events') {
+      res.writeHead(200, {
+        'Content-Type': 'text/event-stream; charset=utf-8',
+        'Cache-Control': 'no-store, no-cache, must-revalidate',
+        Connection: 'keep-alive',
+      });
+      res.write(': connected\n\n');
+      writeTextEvent(res, { source: 'initial' });
+      textClients.add(res);
+      req.on('close', () => textClients.delete(res));
+      return;
+    }
+
+    // POST /text — replace or append token stream text
+    if (req.method === 'POST' && pathname === '/text') {
+      if (!isAuthorized(req)) {
+        return sendJson(res, 401, { error: 'Unauthorized' });
+      }
+
+      let parsed;
+      try {
+        parsed = JSON.parse(await readRequestBody(req));
+      } catch (err) {
+        if (err.status === 413) return sendJson(res, 413, { error: 'Request body too large' });
+        return sendJson(res, 400, { error: 'Invalid JSON' });
+      }
+
+      if (typeof parsed !== 'object' || parsed === null) {
+        return sendJson(res, 400, { error: 'Request body must be a JSON object' });
+      }
+
+      patchText(parsed);
+      publishText({ source: 'api' });
+      return sendJson(res, 200, currentTextState);
+    }
+
+    // POST /text/clear — clear token stream text
+    if (req.method === 'POST' && pathname === '/text/clear') {
+      if (!isAuthorized(req)) {
+        return sendJson(res, 401, { error: 'Unauthorized' });
+      }
+      patchText({ mode: 'clear' });
+      publishText({ source: 'api' });
+      return sendJson(res, 200, currentTextState);
+    }
+
     // Static files
     if (req.method === 'GET') {
       const staticTarget = getStaticFilePath(pathname);
@@ -409,4 +573,139 @@ const server = createServer(async (req, res) => {
   }
 });
 
-server.listen(PORT, HOST, () => console.log(`Clara Avatar Kiosk → http://${HOST}:${PORT}`));
+function textPatchFromActivity(envelope) {
+  if (!envelope || typeof envelope !== 'object') return null;
+  const event = envelope.event && typeof envelope.event === 'object' ? envelope.event : {};
+  const userText = userTextFromActivity(envelope, event);
+  if (userText) return { kind: 'user', text: `\n${userText}\n` };
+  if (envelope.type === 'llm.token' && typeof event.text === 'string') {
+    return { kind: event.channel === 'reasoning' ? 'reasoning' : 'chat', text: event.text };
+  }
+  if (envelope.type === 'task.step.token' && typeof event.text === 'string') {
+    return { kind: 'task', text: event.text };
+  }
+  if (envelope.type === 'tool.call.started') {
+    const name = typeof event.name === 'string' ? event.name : 'tool';
+    return { kind: 'tool', text: `\n[tool] ${name}\n` };
+  }
+  if (envelope.type === 'task.step.started') {
+    const label = typeof event.label === 'string' ? event.label : typeof event.stepId === 'string' ? event.stepId : 'task step';
+    return { kind: 'status', text: `\n[task] ${label}\n` };
+  }
+  if (envelope.type === 'chat.started') return { kind: 'status', text: '\n[chat started]\n' };
+  if (envelope.type === 'chat.finished') return { kind: 'status', text: '\n[chat finished]\n' };
+  if (envelope.type === 'chat.failed') return { kind: 'status', text: '\n[chat failed]\n' };
+  if (envelope.type === 'task.started') return { kind: 'status', text: '\n[task started]\n' };
+  if (envelope.type === 'task.finished') return { kind: 'status', text: '\n[task finished]\n' };
+  if (envelope.type === 'task.error') return { kind: 'status', text: '\n[task error]\n' };
+  return null;
+}
+
+function userTextFromActivity(envelope, event) {
+  if (['chat.user.message', 'user.message', 'chat.message.user', 'message.user'].includes(envelope.type)) {
+    return textFromActivityValue(event.text ?? event.content ?? event.message).trim();
+  }
+
+  const message = event.message && typeof event.message === 'object' ? event.message : null;
+  if (event.role === 'user') {
+    return textFromActivityValue(event.text ?? event.content ?? message).trim();
+  }
+  if (message?.role === 'user') {
+    return textFromActivityValue(message.text ?? message.content ?? message).trim();
+  }
+  return '';
+}
+
+function textFromActivityValue(value) {
+  if (typeof value === 'string') return value;
+  if (Array.isArray(value)) return value.map(textFromActivityValue).filter(Boolean).join('\n');
+  if (value && typeof value === 'object') {
+    if (typeof value.text === 'string') return value.text;
+    if (typeof value.content === 'string') return value.content;
+    if (Array.isArray(value.content)) return textFromActivityValue(value.content);
+    if (Array.isArray(value.parts)) return textFromActivityValue(value.parts);
+    if (typeof value.name === 'string') return value.name;
+  }
+  return '';
+}
+
+function handleActivityEnvelope(envelope) {
+  const patch = textPatchFromActivity(envelope);
+  if (!patch?.text) return;
+  patchText({ mode: 'append', title: 'ASSISTANT STREAM', ...patch });
+  publishText({ source: 'assistant-activity', activitySeq: envelope.seq });
+}
+
+function parseSseEvents(buffer, onEnvelope) {
+  let rest = buffer;
+  let boundary = rest.indexOf('\n\n');
+  while (boundary !== -1) {
+    const frame = rest.slice(0, boundary);
+    rest = rest.slice(boundary + 2);
+    const data = frame
+      .split('\n')
+      .filter(line => line.startsWith('data: '))
+      .map(line => line.slice(6))
+      .join('\n');
+    if (data) {
+      try {
+        onEnvelope(JSON.parse(data));
+      } catch (error) {
+        console.warn('Ignoring malformed assistant activity event:', error);
+      }
+    }
+    boundary = rest.indexOf('\n\n');
+  }
+  return rest;
+}
+
+async function runAssistantActivityBridge() {
+  let lastSeq = Number.MAX_SAFE_INTEGER;
+  let lastErrorMessage = '';
+  for (;;) {
+    try {
+      const response = await fetch(`${bootConfig.assistantActivityUrl}?since=${lastSeq}`);
+      if (!response.ok || !response.body) {
+        throw new Error(`assistant activity stream returned ${response.status}`);
+      }
+      if (lastErrorMessage) {
+        console.log('Assistant activity bridge connected');
+        lastErrorMessage = '';
+      }
+
+      const reader = response.body.getReader();
+      const decoder = new TextDecoder();
+      let buffer = '';
+      for (;;) {
+        const { done, value } = await reader.read();
+        if (done) break;
+        buffer += decoder.decode(value, { stream: true });
+        buffer = parseSseEvents(buffer, envelope => {
+          if (typeof envelope?.seq === 'number') lastSeq = envelope.seq;
+          handleActivityEnvelope(envelope);
+        });
+      }
+      buffer += decoder.decode();
+      parseSseEvents(buffer, envelope => {
+        if (typeof envelope?.seq === 'number') lastSeq = envelope.seq;
+        handleActivityEnvelope(envelope);
+      });
+    } catch (error) {
+      const message = error instanceof Error ? error.message : String(error);
+      if (message !== lastErrorMessage) {
+        console.warn(`Assistant activity bridge disconnected: ${message}`);
+        lastErrorMessage = message;
+      }
+      await new Promise(resolve => setTimeout(resolve, 3000));
+    }
+  }
+}
+
+if (bootConfig.activityBridgeEnabled) {
+  runAssistantActivityBridge();
+}
+
+server.listen(PORT, HOST, () => {
+  console.log(`Clara Avatar Kiosk → http://${HOST}:${PORT}`);
+  if (bootConfig.activityBridgeEnabled) console.log(`Assistant activity bridge → ${bootConfig.assistantActivityUrl}`);
+});

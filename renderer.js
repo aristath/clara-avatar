@@ -30,6 +30,7 @@ const {
   horizontalDriftPixels: HORIZONTAL_DRIFT_PIXELS = [0, 0],
   horizontalDriftDurationMs: HORIZONTAL_DRIFT_DURATION_MS = [0, 0],
   horizontalDriftTimingFunction: HORIZONTAL_DRIFT_TIMING_FUNCTION = 'linear',
+  textPollIntervalMs: TEXT_POLL_INTERVAL_MS = 500,
   snapScrollMs: SNAP_SCROLL_MS,
   snapTimingFunction: SNAP_TIMING_FUNCTION,
   snapHoldMs: SNAP_HOLD_MS,
@@ -42,6 +43,8 @@ const FRAME_HEIGHT = 420;
 const divA = document.getElementById('div-a');
 const divB = document.getElementById('div-b');
 const glitchDiv = document.getElementById('div-glitch');
+const streamTitleEl = document.getElementById('stream-title');
+const streamTextEl = document.getElementById('stream-text');
 divA.style.backgroundColor = MASK_COLOR;
 divB.style.backgroundColor = MASK_COLOR;
 document.documentElement.style.backgroundColor = MASK_COLOR;
@@ -59,6 +62,11 @@ let lastExpression = null;
 let lastValueKey = '';
 let latestRevision = -1;
 let pollInFlight = false;
+let latestTextRevision = -1;
+let textPollInFlight = false;
+let textPollTimer = null;
+let textReconnectTimer = null;
+let textEventSource = null;
 let activeValueSpec = null;
 let rangeTimer = null;
 let rangeDirection = 1;
@@ -651,6 +659,90 @@ function triggerGlitch() {
   }, randomInt(GLITCH_DURATION_MS[0], GLITCH_DURATION_MS[1]));
 }
 
+function normalizeSegmentKind(kind) {
+  return ['chat', 'user', 'reasoning', 'task', 'tool', 'status'].includes(kind) ? kind : 'chat';
+}
+
+function renderTextStream(textState = {}) {
+  if (!streamTitleEl || !streamTextEl) return;
+  streamTitleEl.textContent = textState.title || '';
+  streamTextEl.replaceChildren();
+  const segments = Array.isArray(textState.segments) && textState.segments.length > 0
+    ? textState.segments
+    : [{ kind: 'chat', text: textState.text || '' }];
+
+  for (const segment of segments) {
+    if (!segment?.text) continue;
+    const span = document.createElement('span');
+    span.className = `token token-${normalizeSegmentKind(segment.kind)}`;
+    span.textContent = segment.text;
+    streamTextEl.append(span);
+  }
+}
+
+function handleTextState(textState) {
+  if (!textState || typeof textState !== 'object') return;
+  const revision = Number.isInteger(textState.revision) ? textState.revision : null;
+  if (revision !== null) {
+    if (revision <= latestTextRevision) return;
+    latestTextRevision = revision;
+  }
+  renderTextStream(textState);
+}
+
+async function pollText() {
+  if (textPollInFlight) return;
+  textPollInFlight = true;
+  try {
+    const res = await fetch('/text', { cache: 'no-store' });
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    handleTextState(await res.json());
+  } catch (err) {
+    console.warn('Text poll error:', err.message);
+  } finally {
+    textPollInFlight = false;
+  }
+}
+
+function startTextPolling() {
+  if (textPollTimer) return;
+  pollText();
+  textPollTimer = setInterval(pollText, TEXT_POLL_INTERVAL_MS);
+}
+
+function stopTextPolling() {
+  if (!textPollTimer) return;
+  clearInterval(textPollTimer);
+  textPollTimer = null;
+}
+
+function connectTextEvents() {
+  if (!('EventSource' in window)) {
+    startTextPolling();
+    return;
+  }
+
+  clearTimeout(textReconnectTimer);
+  if (textEventSource) textEventSource.close();
+
+  textEventSource = new EventSource('/text/events');
+  textEventSource.addEventListener('text', (event) => {
+    try {
+      const data = JSON.parse(event.data);
+      handleTextState(data.text);
+      stopTextPolling();
+    } catch (err) {
+      console.warn('Text event error:', err.message);
+    }
+  });
+  textEventSource.onerror = () => {
+    if (textEventSource) textEventSource.close();
+    textEventSource = null;
+    startTextPolling();
+    textReconnectTimer = setTimeout(connectTextEvents, 2000);
+  };
+}
+
 async function init() {
   // Load idle expression at frame 0
   try {
@@ -680,6 +772,7 @@ async function init() {
   latestRevision = 0;
 
   startPolling();
+  connectTextEvents();
   scheduleGlitch();
   scheduleDrift();
 }
