@@ -152,8 +152,9 @@ When `activityBridgeEnabled` is true, Clara activity events from `assistantActiv
 | `maskColor` | string | `"#000000"` | Page and avatar background color |
 | `maxBodyBytes` | number | `65536` | Maximum JSON POST size |
 | `controlToken` | string | `""` | Optional bearer or `X-Clara-Avatar-Token` token for `POST /expression` |
-| `switchMs` | number | `400` | Horizontal expression switch duration |
+| `switchMs` | number | `400` | In-place film-splice expression switch duration |
 | `switchTimingFunction` | string | `"ease-in-out"` | CSS timing function for expression switches |
+| `switchSplicePixels` | `[min,max]` | `[8,32]` | Vertical misregistration range for in-place expression switches |
 | `snapScrollMs` | number | `50` | Per-frame vertical snap duration |
 | `snapTimingFunction` | string | `"ease-in-out"` | CSS timing function for frame snaps |
 | `snapHoldMs` | number | `120` | Hold between vertical frame snaps |
@@ -190,7 +191,7 @@ Numeric timing and intensity values are used directly. Setting a transition dura
 - Server validates config at boot and only serves `index.html`, `renderer.js`, bundled Doto fonts, and current-theme expression PNGs.
 - Browser polling uses `/status` revisions so late image loads cannot overwrite newer states.
 - The page uses the CRT client's two-column display pattern: avatar on the left, token stream on the right.
-- Expression changes snap frame-by-frame, then switch horizontally between two stacked divs. Range values continue snapping back and forth inside the requested frame band, with the range endpoints held for `10x` to `40x` the normal snap hold time.
+- Expression changes snap frame-by-frame, then switch in place with a short film-splice opacity/background-position transition. Range values continue snapping back and forth inside the requested frame band, with the range endpoints held for `10x` to `40x` the normal snap hold time.
 - A third overlay div renders short clipped glitch flashes from cached images.
 - Vertical film drift occasionally offsets the main image divs' `background-position-y`, then returns to center.
 - Horizontal film drift independently and repeatedly offsets the main image divs' `background-position-x` to random nearby positions.

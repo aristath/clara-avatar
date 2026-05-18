@@ -6,6 +6,7 @@
   "maxBodyBytes": 65536,
   "switchMs": 100,
   "switchTimingFunction": "cubic-bezier(.2, 0, 0, 1)",
+  "switchSplicePixels": [8, 32],
   "snapScrollMs": 40,
   "snapTimingFunction": "steps(1, end)",
   "snapHoldMs": 100,

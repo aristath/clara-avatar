@@ -28,7 +28,7 @@
 - Horizontal film drift independently and repeatedly offsets the two main image divs' `background-position-x` to random nearby positions.
 - `#div-glitch` keeps its original direct `background-position-y`, `clip-path`, and opacity behavior.
 - Config exposes timing functions separately for snap, switch, vertical drift-out, vertical drift-return, and horizontal drift transitions.
-- Expression changes snap vertically frame-by-frame, switch horizontally, then snap up to the target frame.
+- Expression changes snap vertically frame-by-frame, switch in place with a short film-splice opacity/background-position transition, then snap up to the target frame.
 - Range values keep the same expression active and bounce frame-by-frame inside the requested mapped frame band.
 - Range endpoints hold for a randomized `10x` to `40x` of `snapHoldMs`; intermediate frames keep the normal snap hold.
 - Last requested state wins during animation via a single pending update.

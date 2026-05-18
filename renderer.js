@@ -2,7 +2,7 @@
  * Clara Avatar Kiosk — Renderer
  *
  * Two stacked divs, CSS background-position for frame/drift animation,
- * CSS transform for expression switches. Pure CSS transitions, no canvas.
+ * CSS opacity/background-position for expression switches. Pure CSS transitions, no canvas.
  */
 
 const {
@@ -10,6 +10,7 @@ const {
   expressionsUrl: EXPRESSIONS_URL,
   switchMs: SWITCH_MS,
   switchTimingFunction: SWITCH_TIMING_FUNCTION,
+  switchSplicePixels: SWITCH_SPLICE_PIXELS = [8, 32],
   pollIntervalMs: POLL_INTERVAL_MS,
   glitchIntervalMs: GLITCH_INTERVAL_MS,
   glitchDurationMs: GLITCH_DURATION_MS,
@@ -325,20 +326,25 @@ function startRampDown(expression, fromFrame, toFrame, targetFrame) {
 
 function startSwitch(expression, _toFrame, targetFrame) {
   const otherDiv = activeDiv === divA ? divB : divA;
-  const direction = Math.random() < 0.5 ? 'left' : 'right';
-  const slideOut = direction === 'left' ? -420 : 420;
-  const slideIn = -slideOut;
+  const oldDiv = activeDiv;
+  const spliceY = pickAxisDrift(SWITCH_SPLICE_PIXELS);
 
   // Clean up old handlers before starting new phase.
   cleanupPhase();
 
-  // Pre-position other div off-screen with new expression at Y=0.
-  // No transition on background-position-y — set directly.
+  // Stack the incoming expression in place; the switch is an in-place film splice.
+  clearTransition(oldDiv);
   clearTransition(otherDiv);
+  forceReflow(oldDiv);
   forceReflow(otherDiv);
-  otherDiv.style.transform = `translateX(${slideIn}px)`;
+  oldDiv.style.transform = 'translateX(0px)';
+  otherDiv.style.transform = 'translateX(0px)';
+  oldDiv.style.zIndex = '1';
+  otherDiv.style.zIndex = '2';
+  oldDiv.style.opacity = '1';
+  otherDiv.style.opacity = '0';
   setBackgroundX(otherDiv, 0);
-  setBackgroundY(otherDiv, 0);
+  setBackgroundY(otherDiv, spliceY);
 
   const url = imageCache.get(expression);
   if (!url) {
@@ -350,20 +356,52 @@ function startSwitch(expression, _toFrame, targetFrame) {
   }
   otherDiv.style.backgroundImage = `url('${url}')`;
 
-  // Animate both: active slides out, other slides in.
-  // Only animate transform — background-position-y is set statically at 0.
-  setTransition('transform', SWITCH_MS, activeDiv, SWITCH_TIMING_FUNCTION);
-  setTransition('transform', SWITCH_MS, otherDiv, SWITCH_TIMING_FUNCTION);
-  activeDiv.style.transform = `translateX(${slideOut}px)`;
-  otherDiv.style.transform = 'translateX(0px)';
+  const transition = SWITCH_MS > 0
+    ? [
+        `opacity ${SWITCH_MS}ms ${SWITCH_TIMING_FUNCTION}`,
+        `background-position-y ${SWITCH_MS}ms ${SWITCH_TIMING_FUNCTION}`,
+      ].join(', ')
+    : 'none';
+  oldDiv.style.transition = transition;
+  otherDiv.style.transition = transition;
 
-  setupPhase(otherDiv, 'transform', SWITCH_MS, SWITCH_TIMING_FUNCTION, () => {
+  function finishSwitch() {
+    cleanupPhase();
+    clearTransition(oldDiv);
+    clearTransition(otherDiv);
+    oldDiv.style.opacity = '0';
+    oldDiv.style.zIndex = '0';
+    otherDiv.style.opacity = '1';
+    otherDiv.style.zIndex = '1';
+    setBackgroundX(oldDiv, 0);
+    setBackgroundY(oldDiv, 0);
     currentExpression = expression;
-    currentFrame = targetFrame;
+    currentFrame = 0;
     activeDiv = otherDiv; // swap roles
 
     startRampUp(expression, 0, targetFrame);
-  });
+  }
+
+  if (SWITCH_MS <= 0) {
+    oldDiv.style.opacity = '0';
+    otherDiv.style.opacity = '1';
+    setBackgroundY(otherDiv, 0);
+    queueMicrotask(finishSwitch);
+    return;
+  }
+
+  phaseHandler = (e) => {
+    if (e.propertyName !== 'opacity') return;
+    finishSwitch();
+  };
+  phaseTarget = otherDiv;
+  otherDiv.addEventListener('transitionend', phaseHandler);
+
+  forceReflow(otherDiv);
+  oldDiv.style.opacity = '0';
+  setBackgroundY(oldDiv, -spliceY);
+  otherDiv.style.opacity = '1';
+  setBackgroundY(otherDiv, 0);
 }
 
 function startRampUp(expression, fromFrame, toFrame) {
@@ -762,9 +800,13 @@ async function init() {
 
   const idleUrl = imageCache.get('idle');
   divA.style.backgroundImage = `url('${idleUrl}')`;
-  // Keep the inactive black buffer from covering the initial idle frame.
+  // Keep the inactive black buffer transparent over the initial idle frame.
   divA.style.transform = 'translateX(0px)';
-  divB.style.transform = 'translateX(420px)';
+  divB.style.transform = 'translateX(0px)';
+  divA.style.opacity = '1';
+  divB.style.opacity = '0';
+  divA.style.zIndex = '1';
+  divB.style.zIndex = '0';
   setBackgroundX(divA, 0);
   setBackgroundX(divB, 0);
   setBackgroundY(divA, 0);

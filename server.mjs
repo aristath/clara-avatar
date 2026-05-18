@@ -21,6 +21,7 @@ const DEFAULT_CONFIG = {
   maskColor: '#000000',
   switchMs: 400,
   switchTimingFunction: 'ease-in-out',
+  switchSplicePixels: [8, 32],
   snapScrollMs: 50,
   snapTimingFunction: 'ease-in-out',
   snapHoldMs: 120,
@@ -109,6 +110,7 @@ function validateConfig(rawConfig) {
 
   config.switchMs = requireNumber('switchMs', config.switchMs);
   config.switchTimingFunction = String(config.switchTimingFunction);
+  config.switchSplicePixels = requireNumberRange('switchSplicePixels', config.switchSplicePixels);
   config.snapScrollMs = requireNumber('snapScrollMs', config.snapScrollMs);
   config.snapTimingFunction = String(config.snapTimingFunction);
   config.snapHoldMs = requireNumber('snapHoldMs', config.snapHoldMs);
@@ -202,6 +204,7 @@ const injectedConfig = {
   expressionsUrl: `/images/expressions/${THEME}/`,
   switchMs: bootConfig.switchMs,
   switchTimingFunction: bootConfig.switchTimingFunction,
+  switchSplicePixels: bootConfig.switchSplicePixels,
   snapScrollMs: bootConfig.snapScrollMs,
   snapTimingFunction: bootConfig.snapTimingFunction,
   snapHoldMs: bootConfig.snapHoldMs,
